@@ -123,10 +123,31 @@ export function ContactCards() {
   return (
     <section className="mt-6 w-full px-4 pb-8 sm:px-8">
       <div className="mx-auto max-w-3xl rounded-2xl bg-amber-50/80 p-4 shadow-sm ring-1 ring-amber-100 sm:p-5">
-        <p className="mb-6 text-center text-sm leading-relaxed text-slate-700 sm:text-base">
+        {/* <p className="mb-6 text-center text-[13px] leading-relaxed text-[#D36A08] sm:text-sm"
+        >
           Please use the contact numbers below to make or manage your bookings
-          directly — we&apos;re here to assist you.
-        </p>
+          directly - we&apos;re here to assist you.
+        </p> */}
+<p className="mb-6 flex items-center justify-center gap-2 text-center text-xs leading-relaxed text-[#D36A08] sm:text-sm">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-4 w-4 flex-shrink-0"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      fillRule="evenodd"
+      d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l6.516 11.59c.75 1.334-.213 2.99-1.742 2.99H3.483c-1.53 0-2.492-1.656-1.743-2.99l6.517-11.59zM11 13a1 1 0 10-2 0 1 1 0 002 0zm-1-7a1 1 0 00-.993.883L9 7v3a1 1 0 001.993.117L11 10V7a1 1 0 00-1-1z"
+      clipRule="evenodd"
+    />
+  </svg>
+
+  <span>
+    Please use the contact numbers below to make or manage your bookings
+    directly - we&apos;re here to assist you.
+  </span>
+</p>
+
         <div className="grid gap-4 md:grid-cols-2">
           {contactCards.map((card) => (
             <article
